@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: 'Varela', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+
+body {
+    background-color: rgb(203, 214, 233);
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.4;
+}
+.card{
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+h2{
+    line-height: 1.2;
+    margin:  1rem 0;
+}
+p{
+    color: rgb(180, 177, 177);
+}
+header{
+    display: flex;
+    align-items: center;
+}
+header img{
+    border-radius: 50%;
+    border: 2px solid rgb(133, 39, 170);
+    margin-right: 2rem;
+}
+.wrapper{
+    padding: 5vw;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.grid{
+    gap: 1rem;
+    display: grid;
+}
+.row1{
+    grid-template-rows: 1fr 1fr;
+}
+.col1{
+    grid-template-columns: 2fr 1fr;
+}
+.col2{
+    grid-template-columns: 1fr 2fr;
+}
+.daniel{
+    background-color: blueviolet;
+    color: #fff;
+}
+.img{
+    display: inline;
+    position: relative;
+    right: -10%;
+    top: 0;
+    border-radius: 0;
+    border: none;
+}
+.jonathan{
+    background: rgba(4, 4, 40, 0.8);
+    color: #fff;
+}
+.jenetta, .kira{
+    background-color: #fff;
+    color: #000;
+}
+.patrick{
+    background: black;
+    color: #fff;
+}
+
+
+@media(max-width:750px){
+    .row1{
+        grid-template-rows: 1fr;
+    }
+    .col1{
+        grid-template-columns: 1fr;
+    }
+    .col2{
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width:600px){
+    .wrapper{
+        grid-template-columns: 1fr;
+    }
+}
